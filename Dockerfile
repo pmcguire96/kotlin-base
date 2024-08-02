@@ -10,7 +10,7 @@ USER root
 ADD build/distributions/kotlin-base.tar /
 ADD entrypoint.sh /
 
-# RUN curl -sk "https://binrepo.target.com/artifactory/platform/runtime-connector/${RUNTIME_CONNECTOR_VERSION}/runtime-connector-linux-amd64-${RUNTIME_CONNECTOR_VERSION}.tgz" -o /runtime-connector.tgz \
+# RUN curl -sk "https://com/artifactory/platform/runtime-connector/${RUNTIME_CONNECTOR_VERSION}/runtime-connector-linux-amd64-${RUNTIME_CONNECTOR_VERSION}.tgz" -o /runtime-connector.tgz \
 #     && tar xvzf /runtime-connector.tgz -C / \
 #     && rm /runtime-connector.tgz \
 #     && groupadd --gid $USER_GID $USERNAME \
